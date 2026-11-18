@@ -2,6 +2,7 @@ node_modules/
 web/node_modules/
 web/dist/
 .firebase/
+.vercel/
 firebase-debug.log
 firebase-debug.*.log
 .DS_Store

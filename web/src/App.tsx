@@ -36,7 +36,7 @@ export function App() {
     setStatus('loading');
     setErrorMsg('');
     try {
-      const res = await fetch('/data/catalog.json', { cache: 'no-cache' });
+      const res = await fetch(`${import.meta.env.BASE_URL}data/catalog.json`, { cache: 'no-cache' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = (await res.json()) as CatalogPayload;
       setCatalog(data);
@@ -154,7 +154,7 @@ export function App() {
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
           <div className="flex min-w-0 items-center gap-3">
             <a
-              href="/"
+              href={import.meta.env.BASE_URL}
               className="flex items-center gap-2 font-mono text-sm font-semibold tracking-tight text-[var(--text-primary)]"
             >
               <span className="inline-flex size-6 items-center justify-center rounded border border-[var(--border-strong)] bg-[var(--bg-surface)] text-xs">
