@@ -1,0 +1,20 @@
+{
+  "name": "noslop",
+  "displayName": "NoSlop Full-Stack Craft",
+  "description": "Unified engineering skill router and multi-domain resource catalog for anti-slop UI design, 60fps motion, responsive layouts, backend APIs, security, and verification.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kian B.",
+    "url": "https://github.com/kicode01"
+  },
+  "homepage": "https://noslop-hub.web.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kicode01/noslop"
+  },
+  "suggestedPrompts": [
+    "Design or redesign this UI with zero generic AI defaults and full responsive/a11y polish",
+    "Audit this interface and motion code for layout thrashing, slop, and contrast/viewport defects",
+    "Design and harden this backend API endpoint, schema, auth boundary, and integration tests"
+  ]
+}

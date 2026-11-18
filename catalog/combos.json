@@ -1,0 +1,76 @@
+[
+  {
+    "id": "combo/saas-app",
+    "name": "SaaS App & Dashboard Redesign",
+    "goal": "Upgrade dense product UI, tokens, states, and component responsiveness without marketing fluff.",
+    "noslopModules": [
+      "skills/noslop/references/01-design-and-anti-slop.md",
+      "skills/noslop/references/03-responsive-and-a11y.md",
+      "skills/noslop/references/04-redesign-and-audit.md"
+    ],
+    "upstreamSkills": [
+      "dammyjay93/interface-design",
+      "ibelick/baseline-ui",
+      "flornkm/prefer-container-queries"
+    ],
+    "conflictNote": "Enforces Operate mode: quiet elevation, <=200ms transitions, single accent, zero decorative gradients."
+  },
+  {
+    "id": "combo/marketing-launch",
+    "name": "Marketing & Landing Page Craft",
+    "goal": "Create a distinctive high-conversion landing page that avoids generic AI card grids and eyebrows.",
+    "noslopModules": [
+      "skills/noslop/references/01-design-and-anti-slop.md",
+      "skills/noslop/references/02-motion-and-interaction.md",
+      "skills/noslop/references/03-responsive-and-a11y.md"
+    ],
+    "upstreamSkills": [
+      "anthropics/frontend-design",
+      "mengto/landing-page",
+      "ibelick/fixing-motion-performance"
+    ],
+    "conflictNote": "Unlocks Persuade mode for expressive typography and one hero moment while enforcing strict compositor-only motion."
+  },
+  {
+    "id": "combo/motion-polish",
+    "name": "60fps Motion & Interaction Polish",
+    "goal": "Remove animation jank, fix curves/timing, and add tactile press and popover origin details.",
+    "noslopModules": [
+      "skills/noslop/references/02-motion-and-interaction.md"
+    ],
+    "upstreamSkills": [
+      "emilkowalski/emil-design-eng",
+      "ibelick/fixing-motion-performance",
+      "ibelick/baseline-ui"
+    ],
+    "conflictNote": "Frequency-gated: 100+/day actions stay un-animated; exits stay shorter than entrances; prefers-reduced-motion mandatory."
+  },
+  {
+    "id": "combo/responsive-wcag",
+    "name": "Multi-Viewport & WCAG 2.2 AA Audit",
+    "goal": "Eliminate sideways overflow, hover-only touch traps, 200% zoom clipping, and keyboard/ARIA failures.",
+    "noslopModules": [
+      "skills/noslop/references/03-responsive-and-a11y.md"
+    ],
+    "upstreamSkills": [
+      "raphaelsalaja/viewports",
+      "flornkm/prefer-container-queries",
+      "ibelick/fixing-accessibility"
+    ],
+    "conflictNote": "Component layouts use @container queries; viewport media queries govern only page shells and global typography."
+  },
+  {
+    "id": "combo/fullstack-backend",
+    "name": "Full-Stack API, DB & Security Ship",
+    "goal": "Design contract-first APIs, schema constraints, auth boundaries, CSP headers, and non-mocked verification.",
+    "noslopModules": [
+      "skills/noslop/references/05-backend-api-and-db.md",
+      "skills/noslop/references/06-security-testing-ops.md"
+    ],
+    "upstreamSkills": [
+      "addyosmani/api-and-interface-design",
+      "addyosmani/best-practices"
+    ],
+    "conflictNote": "Server validates all inputs and enforces resource-level authz; never ships stack traces or unverified mock passes."
+  }
+]

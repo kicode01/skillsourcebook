@@ -1,0 +1,12 @@
+{
+  "name": "noslop",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "sync": "node scripts/sync-catalog.mjs",
+    "dev": "npm --prefix web run dev",
+    "typecheck": "npm --prefix web run typecheck",
+    "build": "npm --prefix web run build",
+    "deploy": "npx -y firebase-tools@latest deploy --only hosting"
+  }
+}
