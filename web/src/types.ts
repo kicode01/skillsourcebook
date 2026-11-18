@@ -19,14 +19,14 @@ export interface StackCombo {
   id: string;
   name: string;
   goal: string;
-  noslopModules: string[];
+  coreModules: string[];
   upstreamSkills: string[];
   conflictNote: string;
 }
 
 export interface CatalogStats {
   total: number;
-  noslopModules: number;
+  coreModules: number;
   workflows: number;
   mcps: number;
   upstreamSkills: number;

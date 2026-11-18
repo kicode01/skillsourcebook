@@ -1,5 +1,5 @@
 ---
-name: noslop
+name: skillsourcebook
 description: >-
   Unified full-stack production engineering skill combining anti-slop UI design,
   60fps motion craft, container-query responsiveness, WCAG accessibility,
@@ -9,7 +9,7 @@ description: >-
   applications across any agent.
 ---
 
-# NoSlop — Full-Stack Engineering Router
+# SkillSourceBook — Full-Stack Engineering Router
 
 One compact skill that enforces a senior design-and-backend engineering bar
 without loading conflicting or irrelevant rules into context.
@@ -49,6 +49,6 @@ When design modes conflict, apply the stricter rule for the surface:
 
 For specialized domains outside the core references (e.g., Three.js, GSAP ScrollTrigger, SwiftUI, View Transitions, Playwright, or framework-specific MCP tools):
 
-1. Search the `noslop` repo's `catalog/index.json` (or query the `ui-skills` MCP server via `list_skills` / `get_skill` if enabled).
+1. Search the `skillsourcebook` repo's `catalog/index.json` (or query the `ui-skills` MCP server via `list_skills` / `get_skill` if enabled).
 2. Load **only 1** niche skill on demand so rules stay focused.
 3. For repeatable multi-step flows, check the repo's `workflows/` directory (`new-feature.md`, `redesign-audit.md`, `production-ship-check.md`).

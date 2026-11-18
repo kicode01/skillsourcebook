@@ -1,13 +1,13 @@
 $ErrorActionPreference = 'Stop'
 
 $RepoRoot = Resolve-Path (Join-Path $PSScriptRoot '..')
-$SkillSource = Join-Path $RepoRoot 'skills\noslop'
+$SkillSource = Join-Path $RepoRoot 'skills\skillsourcebook'
 
 $Targets = @(
-  @{ Name = 'Antigravity'; Dest = (Join-Path $env:USERPROFILE '.gemini\config\skills\noslop') },
-  @{ Name = 'Claude Code'; Dest = (Join-Path $env:USERPROFILE '.claude\skills\noslop') },
-  @{ Name = 'Cursor';      Dest = (Join-Path $env:USERPROFILE '.cursor\skills\noslop') },
-  @{ Name = 'Codex / Open';Dest = (Join-Path $env:USERPROFILE '.agents\skills\noslop') }
+  @{ Name = 'Antigravity'; Dest = (Join-Path $env:USERPROFILE '.gemini\config\skills\skillsourcebook') },
+  @{ Name = 'Claude Code'; Dest = (Join-Path $env:USERPROFILE '.claude\skills\skillsourcebook') },
+  @{ Name = 'Cursor';      Dest = (Join-Path $env:USERPROFILE '.cursor\skills\skillsourcebook') },
+  @{ Name = 'Codex / Open';Dest = (Join-Path $env:USERPROFILE '.agents\skills\skillsourcebook') }
 )
 
 foreach ($t in $Targets) {

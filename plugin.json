@@ -1,16 +1,16 @@
 {
-  "name": "noslop",
-  "displayName": "NoSlop Full-Stack Craft",
+  "name": "skillsourcebook",
+  "displayName": "SkillSourceBook",
   "description": "Unified engineering skill router and multi-domain resource catalog for anti-slop UI design, 60fps motion, responsive layouts, backend APIs, security, and verification.",
   "version": "1.0.0",
   "author": {
     "name": "Kian B.",
     "url": "https://github.com/kicode01"
   },
-  "homepage": "https://noslop-hub.web.app",
+  "homepage": "https://skillsourcebook.web.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kicode01/noslop"
+    "url": "https://github.com/kicode01/skillsourcebook"
   },
   "suggestedPrompts": [
     "Design or redesign this UI with zero generic AI defaults and full responsive/a11y polish",

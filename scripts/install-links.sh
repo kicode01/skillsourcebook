@@ -2,7 +2,7 @@
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SKILL_SOURCE="$REPO_ROOT/skills/noslop"
+SKILL_SOURCE="$REPO_ROOT/skills/skillsourcebook"
 
 link_target() {
   local label="$1"
@@ -13,7 +13,7 @@ link_target() {
   echo "Linked $label: $dest -> $SKILL_SOURCE"
 }
 
-link_target "Antigravity" "$HOME/.gemini/config/skills/noslop"
-link_target "Claude Code" "$HOME/.claude/skills/noslop"
-link_target "Cursor"      "$HOME/.cursor/skills/noslop"
-link_target "Codex/Open"  "$HOME/.agents/skills/noslop"
+link_target "Antigravity" "$HOME/.gemini/config/skills/skillsourcebook"
+link_target "Claude Code" "$HOME/.claude/skills/skillsourcebook"
+link_target "Cursor"      "$HOME/.cursor/skills/skillsourcebook"
+link_target "Codex/Open"  "$HOME/.agents/skills/skillsourcebook"

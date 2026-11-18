@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-18T05:29:14.325Z",
+  "generatedAt": "2026-11-18T05:59:57.158Z",
   "stats": {
     "total": 818,
-    "noslopModules": 7,
+    "coreModules": 7,
     "workflows": 3,
     "mcps": 4,
     "upstreamSkills": 804,
@@ -13,10 +13,10 @@
       "id": "combo/saas-app",
       "name": "SaaS App & Dashboard Redesign",
       "goal": "Upgrade dense product UI, tokens, states, and component responsiveness without marketing fluff.",
-      "noslopModules": [
-        "skills/noslop/references/01-design-and-anti-slop.md",
-        "skills/noslop/references/03-responsive-and-a11y.md",
-        "skills/noslop/references/04-redesign-and-audit.md"
+      "coreModules": [
+        "skills/skillsourcebook/references/01-design-and-anti-slop.md",
+        "skills/skillsourcebook/references/03-responsive-and-a11y.md",
+        "skills/skillsourcebook/references/04-redesign-and-audit.md"
       ],
       "upstreamSkills": [
         "dammyjay93/interface-design",
@@ -29,10 +29,10 @@
       "id": "combo/marketing-launch",
       "name": "Marketing & Landing Page Craft",
       "goal": "Create a distinctive high-conversion landing page that avoids generic AI card grids and eyebrows.",
-      "noslopModules": [
-        "skills/noslop/references/01-design-and-anti-slop.md",
-        "skills/noslop/references/02-motion-and-interaction.md",
-        "skills/noslop/references/03-responsive-and-a11y.md"
+      "coreModules": [
+        "skills/skillsourcebook/references/01-design-and-anti-slop.md",
+        "skills/skillsourcebook/references/02-motion-and-interaction.md",
+        "skills/skillsourcebook/references/03-responsive-and-a11y.md"
       ],
       "upstreamSkills": [
         "anthropics/frontend-design",
@@ -45,8 +45,8 @@
       "id": "combo/motion-polish",
       "name": "60fps Motion & Interaction Polish",
       "goal": "Remove animation jank, fix curves/timing, and add tactile press and popover origin details.",
-      "noslopModules": [
-        "skills/noslop/references/02-motion-and-interaction.md"
+      "coreModules": [
+        "skills/skillsourcebook/references/02-motion-and-interaction.md"
       ],
       "upstreamSkills": [
         "emilkowalski/emil-design-eng",
@@ -59,8 +59,8 @@
       "id": "combo/responsive-wcag",
       "name": "Multi-Viewport & WCAG 2.2 AA Audit",
       "goal": "Eliminate sideways overflow, hover-only touch traps, 200% zoom clipping, and keyboard/ARIA failures.",
-      "noslopModules": [
-        "skills/noslop/references/03-responsive-and-a11y.md"
+      "coreModules": [
+        "skills/skillsourcebook/references/03-responsive-and-a11y.md"
       ],
       "upstreamSkills": [
         "raphaelsalaja/viewports",
@@ -73,9 +73,9 @@
       "id": "combo/fullstack-backend",
       "name": "Full-Stack API, DB & Security Ship",
       "goal": "Design contract-first APIs, schema constraints, auth boundaries, CSP headers, and non-mocked verification.",
-      "noslopModules": [
-        "skills/noslop/references/05-backend-api-and-db.md",
-        "skills/noslop/references/06-security-testing-ops.md"
+      "coreModules": [
+        "skills/skillsourcebook/references/05-backend-api-and-db.md",
+        "skills/skillsourcebook/references/06-security-testing-ops.md"
       ],
       "upstreamSkills": [
         "addyosmani/api-and-interface-design",
@@ -86,11 +86,11 @@
   ],
   "items": [
     {
-      "id": "noslop/master",
+      "id": "skillsourcebook/master",
       "kind": "skill",
-      "name": "NoSlop Full-Stack Router",
-      "pathSlug": "noslop/noslop",
-      "source": "noslop",
+      "name": "SkillSourceBook Full-Stack Router",
+      "pathSlug": "skillsourcebook/skillsourcebook",
+      "source": "skillsourcebook",
       "category": "Core Router",
       "topics": [
         "anti-slop",
@@ -101,15 +101,15 @@
         "security"
       ],
       "description": "Unified master skill router loading only the 1-2 needed reference playbooks per task across UI craft, motion, responsiveness, redesign, backend APIs, and security.",
-      "install": "skills/noslop/SKILL.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/skills/noslop/SKILL.md"
+      "install": "skills/skillsourcebook/SKILL.md",
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/skills/skillsourcebook/SKILL.md"
     },
     {
-      "id": "noslop/design-anti-slop",
+      "id": "skillsourcebook/design-anti-slop",
       "kind": "skill",
       "name": "01 · Design & Anti-Slop Floor",
-      "pathSlug": "noslop/01-design-and-anti-slop",
-      "source": "noslop",
+      "pathSlug": "skillsourcebook/01-design-and-anti-slop",
+      "source": "skillsourcebook",
       "category": "Frontend Craft",
       "topics": [
         "design",
@@ -119,15 +119,15 @@
         "hierarchy"
       ],
       "description": "Mode selection (Operate/Read/Persuade/Experience), type ratios, 4-level text hierarchy, whisper-quiet elevation, concentric radii, and concrete AI-slop ban list.",
-      "install": "skills/noslop/references/01-design-and-anti-slop.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/skills/noslop/references/01-design-and-anti-slop.md"
+      "install": "skills/skillsourcebook/references/01-design-and-anti-slop.md",
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/skills/skillsourcebook/references/01-design-and-anti-slop.md"
     },
     {
-      "id": "noslop/motion-interaction",
+      "id": "skillsourcebook/motion-interaction",
       "kind": "skill",
       "name": "02 · Motion & 60fps Interaction",
-      "pathSlug": "noslop/02-motion-and-interaction",
-      "source": "noslop",
+      "pathSlug": "skillsourcebook/02-motion-and-interaction",
+      "source": "skillsourcebook",
       "category": "Motion",
       "topics": [
         "motion",
@@ -137,15 +137,15 @@
         "easing"
       ],
       "description": "Frequency-based animation gating, tuned cubic-bezier curves, <=200ms feedback, tactile :active scale(0.97), compositor-only transform/opacity, FLIP, and reduced motion.",
-      "install": "skills/noslop/references/02-motion-and-interaction.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/skills/noslop/references/02-motion-and-interaction.md"
+      "install": "skills/skillsourcebook/references/02-motion-and-interaction.md",
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/skills/skillsourcebook/references/02-motion-and-interaction.md"
     },
     {
-      "id": "noslop/responsive-a11y",
+      "id": "skillsourcebook/responsive-a11y",
       "kind": "skill",
       "name": "03 · Responsive & WCAG A11y",
-      "pathSlug": "noslop/03-responsive-and-a11y",
-      "source": "noslop",
+      "pathSlug": "skillsourcebook/03-responsive-and-a11y",
+      "source": "skillsourcebook",
       "category": "Responsiveness",
       "topics": [
         "responsive",
@@ -155,15 +155,15 @@
         "viewports"
       ],
       "description": "Container queries for reusable components, 100dvh/minmax(0,1fr) guards, 320px-1440px + 812x375 + 200% zoom QA matrix, and WCAG 2.2 AA focus/ARIA rules.",
-      "install": "skills/noslop/references/03-responsive-and-a11y.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/skills/noslop/references/03-responsive-and-a11y.md"
+      "install": "skills/skillsourcebook/references/03-responsive-and-a11y.md",
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/skills/skillsourcebook/references/03-responsive-and-a11y.md"
     },
     {
-      "id": "noslop/redesign-audit",
+      "id": "skillsourcebook/redesign-audit",
       "kind": "skill",
       "name": "04 · Redesign & Audit Playbook",
-      "pathSlug": "noslop/04-redesign-and-audit",
-      "source": "noslop",
+      "pathSlug": "skillsourcebook/04-redesign-and-audit",
+      "source": "skillsourcebook",
       "category": "Redesign",
       "topics": [
         "redesign",
@@ -173,15 +173,15 @@
         "polish"
       ],
       "description": "Polish vs full redesign vs divergent prototype, DESIGN.md extraction, severity ranking, cheaper-fix ladder (Delete -> Platform -> Token -> Fix -> Add), and Before/After reporting.",
-      "install": "skills/noslop/references/04-redesign-and-audit.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/skills/noslop/references/04-redesign-and-audit.md"
+      "install": "skills/skillsourcebook/references/04-redesign-and-audit.md",
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/skills/skillsourcebook/references/04-redesign-and-audit.md"
     },
     {
-      "id": "noslop/backend-api-db",
+      "id": "skillsourcebook/backend-api-db",
       "kind": "skill",
       "name": "05 · Backend, APIs & Database",
-      "pathSlug": "noslop/05-backend-api-and-db",
-      "source": "noslop",
+      "pathSlug": "skillsourcebook/05-backend-api-and-db",
+      "source": "skillsourcebook",
       "category": "Backend",
       "topics": [
         "backend",
@@ -192,15 +192,15 @@
         "validation"
       ],
       "description": "Contract-first APIs, uniform error envelopes, strict boundary validation, authn/authz checks, SQL constraints/indexes/transactions, N+1 prevention, idempotency, and timeouts.",
-      "install": "skills/noslop/references/05-backend-api-and-db.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/skills/noslop/references/05-backend-api-and-db.md"
+      "install": "skills/skillsourcebook/references/05-backend-api-and-db.md",
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/skills/skillsourcebook/references/05-backend-api-and-db.md"
     },
     {
-      "id": "noslop/security-testing-ops",
+      "id": "skillsourcebook/security-testing-ops",
       "kind": "skill",
       "name": "06 · Security, Testing & Ops",
-      "pathSlug": "noslop/06-security-testing-ops",
-      "source": "noslop",
+      "pathSlug": "skillsourcebook/06-security-testing-ops",
+      "source": "skillsourcebook",
       "category": "Security & QA",
       "topics": [
         "security",
@@ -211,15 +211,15 @@
         "ops"
       ],
       "description": "HTTPS/HSTS/CSP/cookie hardening, secrets hygiene, rate limits, real unit/integration/E2E testing without mock-passing, structured JSON logs, and pre-ship gates.",
-      "install": "skills/noslop/references/06-security-testing-ops.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/skills/noslop/references/06-security-testing-ops.md"
+      "install": "skills/skillsourcebook/references/06-security-testing-ops.md",
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/skills/skillsourcebook/references/06-security-testing-ops.md"
     },
     {
       "id": "workflow/new-feature",
       "kind": "workflow",
       "name": "New Full-Stack Feature Workflow",
       "pathSlug": "workflows/new-feature",
-      "source": "noslop",
+      "source": "skillsourcebook",
       "category": "Workflow",
       "topics": [
         "workflow",
@@ -230,14 +230,14 @@
       ],
       "description": "4-stage sequence from DB/API contract and surface brief through accessible UI states and live multi-viewport verification.",
       "install": "workflows/new-feature.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/workflows/new-feature.md"
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/workflows/new-feature.md"
     },
     {
       "id": "workflow/redesign-audit",
       "kind": "workflow",
       "name": "Redesign & Anti-Slop Audit Workflow",
       "pathSlug": "workflows/redesign-audit",
-      "source": "noslop",
+      "source": "skillsourcebook",
       "category": "Workflow",
       "topics": [
         "workflow",
@@ -248,14 +248,14 @@
       ],
       "description": "Baseline capture, severity-ordered UI audit, cheaper-fix remediation pass, and live responsive re-verification.",
       "install": "workflows/redesign-audit.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/workflows/redesign-audit.md"
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/workflows/redesign-audit.md"
     },
     {
       "id": "workflow/production-ship-check",
       "kind": "workflow",
       "name": "Production Ship Gate Workflow",
       "pathSlug": "workflows/production-ship-check",
-      "source": "noslop",
+      "source": "skillsourcebook",
       "category": "Workflow",
       "topics": [
         "workflow",
@@ -266,7 +266,7 @@
       ],
       "description": "Final typecheck, production build, auth/security headers verification, and responsive/keyboard browser checks before deploy.",
       "install": "workflows/production-ship-check.md",
-      "url": "https://github.com/kicode01/noslop/blob/main/workflows/production-ship-check.md"
+      "url": "https://github.com/kicode01/skillsourcebook/blob/main/workflows/production-ship-check.md"
     },
     {
       "id": "mcp/ui-skills",

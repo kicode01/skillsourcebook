@@ -50,7 +50,7 @@ async function main() {
     generatedAt: new Date().toISOString(),
     stats: {
       total: items.length,
-      noslopModules: curated.filter((i) => i.source === 'noslop' && i.kind === 'skill').length,
+      coreModules: curated.filter((i) => i.source === 'skillsourcebook' && i.kind === 'skill').length,
       workflows: items.filter((i) => i.kind === 'workflow').length,
       mcps: items.filter((i) => i.kind === 'mcp').length,
       upstreamSkills: normalizedUpstream.length,
@@ -67,7 +67,7 @@ async function main() {
   fs.writeFileSync(path.join(webPublicDataDir, 'catalog.json'), JSON.stringify(payload));
 
   console.log(
-    `Synced ${payload.stats.total} entries (${payload.stats.noslopModules} noslop modules, ${payload.stats.mcps} MCPs, ${payload.stats.workflows} workflows, ${payload.stats.upstreamSkills} upstream skills, ${payload.stats.combos} combos).`,
+    `Synced ${payload.stats.total} entries (${payload.stats.coreModules} core modules, ${payload.stats.mcps} MCPs, ${payload.stats.workflows} workflows, ${payload.stats.upstreamSkills} upstream skills, ${payload.stats.combos} combos).`,
   );
 }
 

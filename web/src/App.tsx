@@ -8,7 +8,7 @@ const PAGE_SIZE = 48;
 
 function getInitialTheme(): 'light' | 'dark' {
   if (typeof window === 'undefined') return 'light';
-  const stored = window.localStorage.getItem('noslop-theme');
+  const stored = window.localStorage.getItem('skillsourcebook-theme');
   if (stored === 'light' || stored === 'dark') return stored;
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
@@ -29,7 +29,7 @@ export function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    window.localStorage.setItem('noslop-theme', theme);
+    window.localStorage.setItem('skillsourcebook-theme', theme);
   }, [theme]);
 
   const loadCatalog = useCallback(async () => {
@@ -106,7 +106,7 @@ export function App() {
     const q = query.trim().toLowerCase();
 
     return catalog.items.filter((item) => {
-      if (tab === 'core' && item.source !== 'noslop') return false;
+      if (tab === 'core' && item.source !== 'skillsourcebook') return false;
       if (tab === 'mcp' && item.kind !== 'mcp') return false;
       if (tab === 'workflow' && item.kind !== 'workflow') return false;
       if (tab === 'skill' && item.kind !== 'skill') return false;
@@ -141,11 +141,11 @@ export function App() {
 
   const tabs: { key: TabKey; label: string; count?: number }[] = [
     { key: 'all', label: 'All', count: catalog?.stats.total },
-    { key: 'core', label: 'NoSlop Core', count: (catalog?.stats.noslopModules ?? 0) + (catalog?.stats.workflows ?? 0) },
+    { key: 'core', label: 'Core Playbook', count: (catalog?.stats.coreModules ?? 0) + (catalog?.stats.workflows ?? 0) },
     { key: 'combos', label: 'Stack Combos', count: catalog?.stats.combos },
     { key: 'mcp', label: 'MCP Servers', count: catalog?.stats.mcps },
     { key: 'workflow', label: 'Workflows', count: catalog?.stats.workflows },
-    { key: 'skill', label: 'Skills', count: (catalog?.stats.noslopModules ?? 0) + (catalog?.stats.upstreamSkills ?? 0) },
+    { key: 'skill', label: 'Skills', count: (catalog?.stats.coreModules ?? 0) + (catalog?.stats.upstreamSkills ?? 0) },
   ];
 
   return (
@@ -158,9 +158,9 @@ export function App() {
               className="flex items-center gap-2 font-mono text-sm font-semibold tracking-tight text-[var(--text-primary)]"
             >
               <span className="inline-flex size-6 items-center justify-center rounded border border-[var(--border-strong)] bg-[var(--bg-surface)] text-xs">
-                N
+                S
               </span>
-              <span>noslop</span>
+              <span>skillsourcebook</span>
             </a>
             <span className="hidden text-xs text-[var(--text-muted)] sm:inline">
               / skills · mcp · workflows
@@ -169,7 +169,7 @@ export function App() {
 
           <div className="flex items-center gap-2">
             <a
-              href="https://github.com/kicode01/noslop"
+              href="https://github.com/kicode01/skillsourcebook"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-press inline-flex min-h-10 items-center rounded-md border border-[var(--border-subtle)] bg-[var(--bg-surface)] px-3 text-xs font-medium text-[var(--text-secondary)] hover:border-[var(--border-strong)] hover:text-[var(--text-primary)]"
@@ -200,7 +200,7 @@ export function App() {
                 Full-stack AI agent skills, MCPs &amp; workflows without the slop.
               </h1>
               <p className="mt-2 text-sm leading-relaxed text-[var(--text-secondary)] text-pretty">
-                One unified router skill (<code className="text-[var(--text-primary)]">skills/noslop</code>) for
+                One unified router skill (<code className="text-[var(--text-primary)]">skills/skillsourcebook</code>) for
                 frontend craft, 60fps motion, responsive layouts, backend APIs, and security — paired with a
                 searchable index of upstream community skills, MCP endpoints, and verified combos.
               </p>
@@ -209,11 +209,13 @@ export function App() {
             <div className="flex flex-col gap-2 sm:min-w-80">
               <div className="flex items-center justify-between rounded-md border border-[var(--border-subtle)] bg-[var(--bg-surface)] px-3 py-2">
                 <code className="truncate font-mono text-xs text-[var(--text-secondary)]">
-                  git clone https://github.com/kicode01/noslop.git
+                  git clone https://github.com/kicode01/skillsourcebook.git
                 </code>
                 <button
                   type="button"
-                  onClick={() => copyCommand('clone', 'git clone https://github.com/kicode01/noslop.git')}
+                  onClick={() =>
+                    copyCommand('clone', 'git clone https://github.com/kicode01/skillsourcebook.git')
+                  }
                   className="btn-press ms-3 inline-flex min-h-8 shrink-0 items-center rounded border border-[var(--border-subtle)] bg-[var(--bg-canvas)] px-2.5 text-xs font-medium text-[var(--text-primary)] hover:border-[var(--border-strong)]"
                 >
                   {copiedCmd === 'clone' ? 'Copied' : 'Copy'}
@@ -243,9 +245,9 @@ export function App() {
                 </dd>
               </div>
               <div className="rounded-md border border-[var(--border-subtle)] bg-[var(--bg-surface)] px-3.5 py-2.5">
-                <dt className="text-xs text-[var(--text-tertiary)]">NoSlop Modules</dt>
+                <dt className="text-xs text-[var(--text-tertiary)]">Core Modules</dt>
                 <dd className="mt-0.5 text-lg font-semibold text-[var(--text-primary)] tabular-nums">
-                  {catalog.stats.noslopModules}
+                  {catalog.stats.coreModules}
                 </dd>
               </div>
               <div className="rounded-md border border-[var(--border-subtle)] bg-[var(--bg-surface)] px-3.5 py-2.5">
@@ -453,7 +455,7 @@ export function App() {
                             </span>
                             <span
                               className={`shrink-0 rounded px-1.5 py-0.5 font-mono text-[11px] ${
-                                item.source === 'noslop'
+                                item.source === 'skillsourcebook'
                                   ? 'bg-[var(--accent-soft)] text-[var(--accent)]'
                                   : 'bg-[var(--bg-inset)] text-[var(--text-tertiary)]'
                               }`}
@@ -507,10 +509,10 @@ export function App() {
 
       <footer className="border-t border-[var(--border-subtle)] py-5">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 text-xs text-[var(--text-muted)] sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <span>NoSlop — Unified Skills, MCP &amp; Workflows Index</span>
+          <span>SkillSourceBook — Unified Skills, MCP &amp; Workflows Index</span>
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://github.com/kicode01/noslop"
+              href="https://github.com/kicode01/skillsourcebook"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[var(--text-primary)]"
@@ -551,9 +553,9 @@ function ComboCard({ combo }: { combo: StackCombo }) {
 
         <div className="mt-4 space-y-2.5">
           <div>
-            <h3 className="text-xs font-medium text-[var(--text-tertiary)]">NoSlop Modules</h3>
+            <h3 className="text-xs font-medium text-[var(--text-tertiary)]">Core Modules</h3>
             <ul className="mt-1 space-y-1">
-              {combo.noslopModules.map((mod) => (
+              {combo.coreModules.map((mod) => (
                 <li key={mod} className="truncate font-mono text-xs text-[var(--text-primary)]">
                   {mod}
                 </li>

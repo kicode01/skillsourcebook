@@ -1,6 +1,6 @@
 # Credits & Upstream Attribution
 
-The core `noslop` skill rules and curated catalog draw inspiration from and index open community skills and official platform documentation, including:
+The core `skillsourcebook` skill rules and curated catalog draw inspiration from and index open community skills and official platform documentation, including:
 
 - **UI Skills Registry** (`https://www.ui-skills.com`) — curated by Julien Thibeaut (`ibelick`) and community contributors
   - `ibelick/baseline-ui`, `ibelick/fixing-motion-performance`, `ibelick/fixing-accessibility`, `ibelick/improve-ui`, `ibelick/create-design-md`, `ibelick/ui-skills-root`

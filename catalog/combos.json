@@ -3,10 +3,10 @@
     "id": "combo/saas-app",
     "name": "SaaS App & Dashboard Redesign",
     "goal": "Upgrade dense product UI, tokens, states, and component responsiveness without marketing fluff.",
-    "noslopModules": [
-      "skills/noslop/references/01-design-and-anti-slop.md",
-      "skills/noslop/references/03-responsive-and-a11y.md",
-      "skills/noslop/references/04-redesign-and-audit.md"
+    "coreModules": [
+      "skills/skillsourcebook/references/01-design-and-anti-slop.md",
+      "skills/skillsourcebook/references/03-responsive-and-a11y.md",
+      "skills/skillsourcebook/references/04-redesign-and-audit.md"
     ],
     "upstreamSkills": [
       "dammyjay93/interface-design",
@@ -19,10 +19,10 @@
     "id": "combo/marketing-launch",
     "name": "Marketing & Landing Page Craft",
     "goal": "Create a distinctive high-conversion landing page that avoids generic AI card grids and eyebrows.",
-    "noslopModules": [
-      "skills/noslop/references/01-design-and-anti-slop.md",
-      "skills/noslop/references/02-motion-and-interaction.md",
-      "skills/noslop/references/03-responsive-and-a11y.md"
+    "coreModules": [
+      "skills/skillsourcebook/references/01-design-and-anti-slop.md",
+      "skills/skillsourcebook/references/02-motion-and-interaction.md",
+      "skills/skillsourcebook/references/03-responsive-and-a11y.md"
     ],
     "upstreamSkills": [
       "anthropics/frontend-design",
@@ -35,8 +35,8 @@
     "id": "combo/motion-polish",
     "name": "60fps Motion & Interaction Polish",
     "goal": "Remove animation jank, fix curves/timing, and add tactile press and popover origin details.",
-    "noslopModules": [
-      "skills/noslop/references/02-motion-and-interaction.md"
+    "coreModules": [
+      "skills/skillsourcebook/references/02-motion-and-interaction.md"
     ],
     "upstreamSkills": [
       "emilkowalski/emil-design-eng",
@@ -49,8 +49,8 @@
     "id": "combo/responsive-wcag",
     "name": "Multi-Viewport & WCAG 2.2 AA Audit",
     "goal": "Eliminate sideways overflow, hover-only touch traps, 200% zoom clipping, and keyboard/ARIA failures.",
-    "noslopModules": [
-      "skills/noslop/references/03-responsive-and-a11y.md"
+    "coreModules": [
+      "skills/skillsourcebook/references/03-responsive-and-a11y.md"
     ],
     "upstreamSkills": [
       "raphaelsalaja/viewports",
@@ -63,9 +63,9 @@
     "id": "combo/fullstack-backend",
     "name": "Full-Stack API, DB & Security Ship",
     "goal": "Design contract-first APIs, schema constraints, auth boundaries, CSP headers, and non-mocked verification.",
-    "noslopModules": [
-      "skills/noslop/references/05-backend-api-and-db.md",
-      "skills/noslop/references/06-security-testing-ops.md"
+    "coreModules": [
+      "skills/skillsourcebook/references/05-backend-api-and-db.md",
+      "skills/skillsourcebook/references/06-security-testing-ops.md"
     ],
     "upstreamSkills": [
       "addyosmani/api-and-interface-design",

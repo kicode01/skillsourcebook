@@ -151,7 +151,7 @@ export function ResourceDrawer({ item, onClose }: ResourceDrawerProps) {
             </pre>
           </div>
 
-          {item.source !== 'noslop' && item.kind === 'skill' && (
+          {item.source !== 'skillsourcebook' && item.kind === 'skill' && (
             <div>
               <div className="flex items-center justify-between gap-2">
                 <h3 className="text-xs font-medium text-[var(--text-tertiary)]">
